@@ -30,11 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
-    'tencent' => [
-        'ekyc' => [
-            'secret_id' => env('TENCENT_EKYC_SECRET_ID'),
-            'secret_key' => env('TENCENT_EKYC_SECRET_KEY'),
-        ],
+    'tencent_cloud' => [
+        'secret_id' => env('TENCENT_CLOUD_SECRET_ID'),
+        'secret_key' => env('TENCENT_CLOUD_SECRET_KEY'),
     ],
 
 ];
