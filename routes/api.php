@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::namespace('Ekyc')->group(function() {
+    Route::post('/analyse-id', 'AnalyseDocumentController');
+    Route::post('/verify-selfie', 'VerifySelfieController');
+});
+
+Route::get('/enum/document-type', 'EnumController@documentType');
